@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head itemscope="" itemtype="https://schema.org/WebSite">
+    <meta charset="UTF-8">
+    <meta name="description" content="Keypair - Specialist Crypto & Fintech Cybersecurity">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keypair - Specialist Crypto & Fintech Cybersecurity</title>
+    <meta name="robots" content="max-image-preview:large">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body class="page">
+    <div class="site-container">
+
+      <header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader">
+        <div class="wrap">
+          
+          <div class="title-area">
+            <p class="site-title" itemprop="headline">
+              <a href="/">Keypair - Crypto & Fintech Cybersecurity</a>
+            </p>
+          </div>
+          
+          <nav class="nav-primary nav-menu">
+            <ul class="menu">
+              <% primary_nav.forEach(function(primary_nav) { 
+                var menu_item_classes = 'menu-item';
+                if(primary_nav.url == page) {
+                  menu_item_classes += ' current-menu-item';
+                } %>
+                <li id="menu-item-<%= primary_nav.slug %>" class="<%= menu_item_classes %>">
+                  <a class="menu-link" itemprop="url" href="<%= primary_nav.url %>">
+                    <span itemprop="name"><%= primary_nav.title %></span>
+                  </a>
+                </li>
+              <% }); %>
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+
+      <div class="site-inner">
+        <div class="content-wrap">
