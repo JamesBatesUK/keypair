@@ -390,8 +390,6 @@ strong.orange-darker {
 	margin-bottom: 0;
 }
 
-
-
 /* Columns
 ---------------------------------------------------------------------------- */
 
@@ -733,7 +731,6 @@ strong.orange-darker {
   grid-column: 6;
 }
 
-
 /* Entry Sections
 ---------------------------------------------------------------------------- */
 
@@ -742,16 +739,21 @@ strong.orange-darker {
 }
 
 .entry-section .wrap {
-	max-width: 1140px;
+	max-width: 1080px;
 	margin: 0 auto;
-  padding: 60px 0;
+  padding: 80px 0;
+}
+
+.entry-section .column-header img {
+  width: 204px;
+  height: 170px;
 }
 
 /* Title Section
 --------------------------------------------- */
 
 #title-section {
-  background-image: url(../images/sp-internet-technology-network-and-cyber-security.jpg);
+  background-image: url(../images/internet-technology-network-and-cyber-security.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -789,7 +791,6 @@ strong.orange-darker {
   padding: 18px 30px 18px 120px;
 }
 
-
 #title-section h1::first-line {
   font-size: 30px;
 }
@@ -820,7 +821,7 @@ strong.orange-darker {
 --------------------------------------------- */
 
 #partnering-section {
-  background-image: url(../images/sp-nice-to-meet-you-partner.jpg);
+  background-image: url(../images/business-men-shaking-hands-warm.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -832,69 +833,116 @@ strong.orange-darker {
 }
 
 #partnering-section .entry-content {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
   width: 48%;
   border-radius: 6px;
   overflow: hidden;
 }
 
 #partnering-section .first-paragraph {
-  background-color: #675b47;
+  /* background-color: #675b47; */
+  background-color: #666154;
   color: #ffffff;
   margin: 0;
-  padding: 30px;
-  font-size: 18px;
+  padding: 40px 40px 35px;
+  /* font-size: 18px; */
 }
 
 #partnering-section .second-paragraph {
   background-color: #ffffff;
   margin: 0;
-  padding: 30px;
+  padding: 35px 40px 40px;
 }
 
 
-/* Cybersecuity  Section
+/* Cybersecuity Sections
 --------------------------------------------- */
 
-#cybersecurity-section-1 {
-  background-image: url(../images/sp-blue-and-orange-digital-binary-code-matrix.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-/* #cybersecurity-section-1 .layout-column {
-} */
-
-#cybersecurity-section-1 .column-header {
+.cybersecurity-section .column-header {
   color: #ec8500;
   background-color: rgba(0, 0, 0, .7);
-  padding: 30px;
+  padding: 40px;
   text-align: center;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   overflow: hidden;
 }
 
-#cybersecurity-section-1 .column-article {
+.cybersecurity-section .column-article {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 40px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   overflow: hidden;
 }
 
-#cybersecurity-section-1 .column-header h3 {
+.cybersecurity-section .column-header h3 {
   margin: 0;
+  font-size: 27px;
 }
 
-#cybersecurity-section-1 .column-article {
-  background-color: #eee;
+.cybersecurity-section .column-article p:last-child {
+  margin-bottom: 0;
+}
+
+/* Cybersecuity Section 1
+--------------------------------------------- */
+
+#cybersecurity-section-1 {
+  background-image: url(../images/abstract-orange-digital-binary-code-matrix.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+/* Cybersecuity Section 2
+--------------------------------------------- */
+
+#cybersecurity-section-2 {
+  background-color: #e6e6e6;
+}
+
+#objective-trusted-col .column-header{
+  background-color: #e29017;
+}
+
+#objective-trusted-col .column-header h3 {
+  color: #fff;
+}
+
+#cybersecurity-training-col .column-header {
+  background-color: #919191;
+}
+
+#cybersecurity-training-col .column-header h3 {
+  color: #fff;
+}
+
+
+/* Cybersecuity Section 3
+--------------------------------------------- */
+
+#cybersecurity-section-3 {
+  background-image: url(../images/abstract-teal-hexagonal-blockchain-style.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+#cybersecurity-section-3 .column-header{
+  background-color: #218975;
   padding: 30px;
 }
 
-
-#cybersecurity-section-1 .column-article p:last-child {
-  margin-bottom: 0;
+#cybersecurity-section-3 h3{
+  color: #ffffff;
+  font-size: 22px;
 }
+
+#cybersecurity-section-3 .column-article {
+  padding: 30px;
+}
+
