@@ -454,7 +454,7 @@ strong.orange-darker {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .layout-column-gap-2 {
     grid-gap: 2em 0;
@@ -467,7 +467,7 @@ strong.orange-darker {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .layout-column {
     display: block;
@@ -524,7 +524,7 @@ strong.orange-darker {
   grid-template-areas: "col1 col2";
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .layout-columns-2>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -548,7 +548,7 @@ strong.orange-darker {
   grid-template-areas: "col1 col2 col3";
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .layout-columns-3>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -561,7 +561,7 @@ strong.orange-darker {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .col-3-widecenter>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -573,7 +573,7 @@ strong.orange-darker {
   grid-template-columns: 2fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .col-3-wideleft>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -585,7 +585,7 @@ strong.orange-darker {
   grid-template-columns: 1fr 1fr 2fr;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .col-3-wideright>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -598,7 +598,7 @@ strong.orange-darker {
   grid-template-areas: "col1 col2 col3 col4";
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .layout-columns-4>.layout-column-wrap.is-responsive-column {
       grid-template-rows:auto;
       -ms-grid-columns: 1fr 1fr;
@@ -607,7 +607,7 @@ strong.orange-darker {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .layout-columns-4>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -631,7 +631,7 @@ strong.orange-darker {
   grid-template-areas: "col1 col2 col3 col4 col5";
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .layout-columns-5>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -645,7 +645,7 @@ strong.orange-darker {
   grid-template-areas: "col1 col2 col3 col4 col5 col6";
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .layout-columns-6>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr 1fr;
       grid-template-columns: 1fr 1fr;
@@ -653,7 +653,7 @@ strong.orange-darker {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .layout-columns-6>.layout-column-wrap.is-responsive-column {
       -ms-grid-columns:1fr;
       grid-template-columns: 1fr;
@@ -740,13 +740,15 @@ strong.orange-darker {
 .entry-section .wrap {
 	max-width: 1080px;
 	margin: 0 auto;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .entry-section .column-header img {
   margin: 0 auto 10px;
-  width: 204px;
+  max-width: 204px;
   height: 170px;
+  width: 100%;
+  height: auto;
 }
 
 /* Title Section
@@ -1058,4 +1060,295 @@ strong.orange-darker {
 .site-footer .column-2 .column-article,
 .site-footer .column-3 .column-article {
   padding: 10px 0 0;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+
+  .site-title > a {
+    width: 220px;
+  }
+
+  #title-section > .wrap {
+    max-width: 700px;
+  }
+
+  #title-section h1 {
+    padding: 13px 30px 13px 85px;
+  }
+
+  #title-section p {
+    padding: 7px 60px 7px 85px;
+  }
+  
+  #title-section img {
+    width: 180px;
+    height: auto;
+    margin-top: -110px;
+  }
+
+  .site-inner h1,
+  #title-section h1::first-line {
+    font-size: 24px;
+  }
+
+  .site-inner h2 {
+    font-size: 22px;
+  }
+
+  #title-section h1,
+  .site-inner h3,
+  #crypto-section .column-article h3,
+  #cybersecurity-section-3 h3,
+  .cybersecurity-section .column-header h3,
+  #banner-section p {
+    font-size: 20px;
+  }
+
+  .site-inner h4 {
+    font-size: 18px;
+  }
+
+  .site-inner h5 {
+    font-size: 16px;
+  }
+
+  .site-inner h6 {
+    font-size: 14px;
+  }
+
+  .site-inner p,
+  .site-inner ul li,
+  #title-section p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  
+  .site-inner ul {
+    padding-bottom: 8p  x;
+  }
+
+  .cybersecurity-section .column-article,
+  .cybersecurity-section .column-header,
+  #crypto-section .column-article {
+    padding: 25px !important;
+  }
+  
+  .entry-section .column-header img,
+  #cybersecurity-section-3 .column-header img,
+  #crypto-section .column-header img {
+    padding: 0 20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .entry-section .wrap {
+    padding: 60px 0;
+  }
+
+  #title-section {
+    padding: 0;
+  }
+
+  #title-section h1,
+  #title-section h1::first-line {
+    font-size: 20px;
+  }
+
+  #partnering-section {
+    padding: 0;
+    background-position: right -150px;
+  }
+
+	#partnering-section .entry-content {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #partnering-section .wrap {
+    padding: 300px 0 0 ;
+  }
+
+  #partnering-section .first-paragraph, 
+  #partnering-section .second-paragraph {
+    padding: 30px 5%;
+  }
+  
+  .cybersecurity-section .column-article,
+  #crypto-section .layout-column {
+    margin-bottom: 30px;
+  }
+
+  .layout-column-wrap {
+    display: block;
+  }
+
+  .entry-section {
+    padding: 0 5%;
+  }
+
+  /* #partnering-section p {
+  } */
+
+  .site-footer {
+    padding: 30px 20px;
+  }
+  .site-footer p,
+  .site-footer ul li {
+    text-align: center;
+  }
+
+  .site-footer .layout-column-gap-2 {
+    grid-gap: .5em 0;
+  }
+
+  .site-footer .column-1 img {
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  p {
+    margin: 0 0 16px;
+  }
+  
+  .site-header {
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  
+  .nav-menu a {
+    font-size: 14px;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .nav-menu {
+    padding-top: 22px;
+    padding-right: 0px;
+  }
+  
+  .site-title > a {
+    width: 190px;
+    margin-left: -8px;
+  }
+
+  #title-section .wrap {
+    padding: 100px 0;
+  }
+
+  #title-section h1 {
+    line-height: 1.1;
+    padding: 13px 20px 13px 45px;
+  }
+
+  #title-section h1,
+  #title-section h1::first-line {
+    font-size: 15px;
+  }
+
+  #title-section p {
+    font-size: 12px;
+    padding: 7px 30px 7px 45px;
+  }
+
+	#title-section img {
+    margin-top: -80px;
+    width: 150px;
+  }
+
+  .entry-section .wrap {
+    padding: 30px 0;
+  }
+  
+  #partnering-section {
+    padding: 0;
+    background-position: calc(50% + -106px) calc(50% + -160px);
+  }
+  
+  .cybersecurity-section > .wrap {
+    padding: 30px 0 10px;
+  }
+
+  .cybersecurity-section .column-article,
+  .cybersecurity-section .column-header,
+  #crypto-section .column-article {
+    padding: 25px 5% !important;
+  }
+
+  .cybersecurity-section .column-article {
+    margin-bottom: 20px;
+  }
+
+  #crypto-section .entry-content {
+    background-color: #ffffff;
+    padding: 25px 5%;
+    margin-bottom: 25px;
+  }
+
+  #crypto-section .column-article {
+    padding: 25px 5%;
+    margin-bottom: 16px;
+  }
+
+  #crypto-section .layout-column {
+    margin-bottom: 20px;
+  }
+
+  #crypto-section > .wrap {
+    padding: 30px 0 10px;
+  }
+
+  .site-footer {
+    padding: 30px 5%;
+  }
+
+}
+
+
+@media only screen and (max-width: 370px) {
+
+  .site-title > a {
+    width: 150px;
+    margin-left: -8px;
+  }
+
+  #title-section img {
+    margin-top: -75px;
+    width: 130px;
+  }
+
+
+  #title-section h1,
+  #title-section h1::first-line {
+    font-size: 13px;
+  }
+
+  
+  #title-section h1 {
+    padding: 10px 13px 10px 68px
+  }
+
+  #title-section p {
+    font-size: 10px;
+    padding: 4px 23px 4px 68px;
+  }
+
+  #title-section h1,
+  #title-section p {
+    margin: 0 0 0 60px;
+  }
+
 }
