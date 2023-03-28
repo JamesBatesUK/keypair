@@ -745,6 +745,7 @@ strong.orange-darker {
 }
 
 .entry-section .column-header img {
+  margin: 0 auto 10px;
   width: 204px;
   height: 170px;
 }
@@ -868,6 +869,10 @@ strong.orange-darker {
   overflow: hidden;
 }
 
+.cybersecurity-section .column-header img {
+  margin: 0 auto;
+}
+
 .cybersecurity-section .column-article {
   background-color: #ffffff;
   padding: 40px;
@@ -946,3 +951,63 @@ strong.orange-darker {
   padding: 30px;
 }
 
+/* Crypto Section 3
+--------------------------------------------- */
+
+#crypto-section {
+  background-color: #e6e6e6;
+}
+
+#crypto-section .entry-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+#crypto-section .layout-column {
+  margin-bottom: 40px;
+}
+
+#crypto-section .column-header {
+  background-color: #919191;
+  padding: 40px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+#crypto-section .column-header img  {
+  margin: 0 auto;
+  display: block;
+}
+
+#crypto-section .column-article {
+  background-color: #ffffff;
+  padding: 40px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#crypto-section .column-article h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#crypto-section .entry-content p:last-child {
+  margin-bottom: 0;
+}
+
+#crypto-section .layout-column ul  {
+  margin-left: 20px;
+}
+
+#crypto-section .layout-column ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+#crypto-section .layout-column ul li:last-child {
+  margin-bottom: 0;
+}
