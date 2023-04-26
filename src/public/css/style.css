@@ -325,6 +325,18 @@ h6 {
   background-color: #ec8500;
 }
 
+#menu-item-linkedin a{
+  background-color: #367dbd;
+}
+
+#menu-item-linkedin a:hover, 
+#menu-item-linkedin a:focus {
+  background-color: #538aba;
+}
+
+
+
+
 
 
 
@@ -843,7 +855,8 @@ strong.orange-darker {
 
 #partnering-section .first-paragraph {
   /* background-color: #675b47; */
-  background-color: #666154;
+  /* background-color: #666154; */
+  background-color: #79756b;
   color: #ffffff;
   margin: 0;
   padding: 40px 40px 35px;
@@ -1012,6 +1025,36 @@ strong.orange-darker {
 #crypto-section .layout-column ul li:last-child {
   margin-bottom: 0;
 }
+
+/* About Us Sections
+---------------------------------------------------------------------------- */
+
+/* About Section
+--------------------------------------------- */
+
+#about-header {
+  background-color: #e6e6e6;
+  padding: 60px 0 0;
+}
+
+#about-content {
+  background-color: #e6e6e6;
+  padding: 40px 0 60px;
+}
+
+#about-header > .wrap,
+#about-content > .wrap {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 40px 40px;
+  
+}
+
+#about-header .entry-content p:last-child,
+#about-content .entry-content p:last-child {
+  margin-bottom: 0;
+}
+
 
 /* Common Classes
 ---------------------------------------------------------------------------- */
@@ -1342,7 +1385,7 @@ strong.orange-darker {
   }
 
   #title-section p {
-    font-size: 10px;
+    font-size: 10xpx;
     padding: 4px 23px 4px 68px;
   }
 

@@ -31,10 +31,10 @@ app.get('/', function(req, res) {
 });
 
 // handle requests for the about page
-//app.get('/about', function(req, res) {
-//  // render the about view and pass in the current URL
-//  res.render('pages/about', { page : req.url });
-//});
+app.get('/about', function(req, res) {
+ // render the about view and pass in the current URL
+ res.render('pages/about', { page : req.url });
+});
 
 // start the server and listen for incoming requests on port 8080
 app.listen(8080);
