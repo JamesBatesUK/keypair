@@ -37,5 +37,9 @@ app.get('/about', function(req, res) {
 });
 
 // start the server and listen for incoming requests on port 8080
-app.listen(8080);
-console.log('Server is listening on port 8080');
+const PORT = 8080;
+const IP = '0.0.0.0'; // Listen on all available network interfaces
+
+app.listen(PORT, IP, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
