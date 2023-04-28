@@ -1,6 +1,8 @@
 // import the express framework
 var express = require('express');
 
+const favicon = require('serve-favicon');
+
 // create an express app
 var app = express();
 
@@ -15,6 +17,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // set the directory where views (ejs templates) are located
 app.set('views', path.join(__dirname, 'views'));
+
+// Serve the favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // create a global variable to store data that can be accessed by all views
 app.locals.primary_nav = [
