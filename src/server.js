@@ -27,6 +27,9 @@ app.locals.primary_nav = [
   { title: 'About', url: "/about",  slug: 'about' }
 ];
 
+// Set a global variable for the current year
+app.locals.year = new Date().getFullYear();
+
 // use res.render to render an ejs view file
 
 // handle requests for the index (home) page
