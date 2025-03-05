@@ -27,8 +27,12 @@ app.locals.primary_nav = [
   { title: 'About', url: "/about",  slug: 'about' }
 ];
 
-// Set a global variable for the current year
-app.locals.year = new Date().getFullYear();
+// log the year on each request
+app.use((req, res, next) => {
+  app.locals.year = new Date().getFullYear();
+  console.log(`Updated year: ${app.locals.year}`); // Log to verify it's changing
+  next();
+});
 
 // use res.render to render an ejs view file
 
