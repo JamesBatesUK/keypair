@@ -30,7 +30,6 @@ app.locals.primary_nav = [
 // log the year on each request
 app.use((req, res, next) => {
   app.locals.year = new Date().getFullYear();
-  console.log(`Updated year: ${app.locals.year}`); // Log to verify it's changing
   next();
 });
 
